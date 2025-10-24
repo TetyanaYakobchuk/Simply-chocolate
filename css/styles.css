@@ -1,0 +1,437 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: antiquewhite;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 40px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset();
+    clip: rect(0 0 0);
+    overflow: hidden;
+}
+
+/*---------HEADER------------*/
+.header-logo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    color: #111;
+}
+
+.header-logo-cursive {
+    font-style: italic;
+}
+
+.header-menu-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        color: #111;
+}
+
+.header-menu-link:focus,
+.header-menu-link:hover {
+    color: #fd9222;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+}
+/*----------HERO-----------*/
+.hero {
+    background-color: #D9D9D9; /*тут буде фон*/
+    color: #fff;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+}
+
+.hero-buy-btn {
+    color: #fff;
+    background-color: #fd9222;
+    border: 1px solid #fd9222;
+    width: 144px;
+    height: 45px;
+}
+
+.hero-made-btn {
+    color: #fff;
+    border: 1px solid #fff;
+    width: 183px;
+    height: 45px;
+    border-radius: 100px;
+    padding: 14px 40px;
+    font-weight: 600;
+    
+}
+
+.hero-down-btn {
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+/*----------FEATURES-----------*/
+
+.features {
+    background-color: #1e1823;
+    color: #fff;
+}
+
+.features-list {}
+
+.features-item {}
+
+.features-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+.features-text {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*--------TASTE------------*/
+
+.taste {
+    background-color: #fff;
+}
+
+.taste-title title {
+
+}
+
+.taste span{
+    color: #fd9222;
+}
+
+.taste-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #111;
+}
+
+.taste-list {}
+
+.taste-item {}
+
+.taste-image {
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
+}
+
+.taste-subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111;
+}
+
+/*---------MADE------------*/
+
+.made {
+    color: #111;
+}
+
+.made-title title {
+
+}
+
+.made-title span {
+    color: #fd9222;
+}
+
+.made-image {
+    border-radius: 15px;
+    width: 600px;
+    height: 400px;
+}
+
+.made-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.made-list {}
+
+.made-item {}
+
+.made-text {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+/*---------PRODUCTS------------*/
+
+.products {}
+
+.products-title title{
+
+}
+
+.products-title span {
+color: #fd9222;
+}
+
+.products-list {}
+
+.products-item {}
+
+.products-image {}
+
+.products-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.products-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.products-bnt {
+    font-weight: 600;
+    border: 1px solid;
+    padding: 20px;
+    width: 94px;
+    height: 33px;
+    text-align: center;
+}
+
+/*---------SELLERS------------*/
+
+.sellers {}
+
+.sellers-title title {
+
+}
+
+.sellers-title span {
+    color: #fd9222;
+}
+
+.sellers-list {}
+
+.sellers-item {}
+
+.sellers-image {
+    border-radius: 15px;
+}
+
+.sellers-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.sellers-btn {
+    border: 1px solid;
+    width: 162px;
+    height: 50px;
+    background-color: #fd9222;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+/*----------LOVED-----------*/
+
+.loved {}
+
+.loved-title {}
+
+.loved-title span{
+    color: #fd9222;
+    width: 200px;
+    height: 122px;
+}
+
+.title {}
+
+.loved-list {}
+
+.loved-item {}
+
+.loved-image {
+    border-radius: 100%;
+}
+
+.loved-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+}
+
+.loved-text {
+    line-height: 1.29;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.loved-bnt {
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 222px;
+    height: 50px;
+}
+
+/*----------EXPLORE-----------*/
+
+.explore {
+    background-color: grey; /*тут буде фон*/
+    color: #fff;
+}
+
+.explore-image {}
+
+.explore-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.explore-text {
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.explore-btn {
+    border: 1px solid #fd9222;
+    width: 172px;
+    height: 50px;
+    background-color: #fd9222;
+    font-size: 18px;
+    color: #fff;
+}
+
+/*----------FOOTER-----------*/
+
+.footer {
+    background-color: #1e1823;
+    color: #fff;
+}
+
+.footer-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+}
+
+.footer-text span{
+    color: #fd9222;
+}
+
+.footer-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+}
+
+.footer-address-list {
+    color: ;
+}
+
+.footer-address-item {
+    font-style: normal;
+}
+
+.footer-address-link {
+    color: #fff;
+}
+
+.footer-social-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.footer-social-item {
+}
+
+.footer-social-link {
+}
+
+.footer-social-icon {
+}
+
+.footer-nav {
+}
+
+.footer-nav-list {}
+
+.footer-nav-item {}
+
+.footer-nav-link {
+    color: #fff;
+}
