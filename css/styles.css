@@ -33,7 +33,18 @@ button {
     overflow: hidden;
 }
 
+.container {
+    width: 1136px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /*---------HEADER------------*/
+.header {
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
 .header-logo {
     font-size: 18px;
     font-weight: 700;
@@ -70,8 +81,13 @@ button {
 }
 /*----------HERO-----------*/
 .hero {
-    background-color: #D9D9D9; /*тут буде фон*/
     color: #fff;
+    padding-bottom: 80px;
+}
+.hero-container {
+    padding: 380px 40px 40px 40px;
+    background-color: #D9D9D9; /*тут буде фон*/
+    border-radius: 30px;
 }
 
 .hero-title {
@@ -79,6 +95,8 @@ button {
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    max-width: 484px;
 }
 
 .hero-buy-btn {
@@ -112,6 +130,7 @@ button {
 .features {
     background-color: #1e1823;
     color: #fff;
+    padding: 50px 0;
 }
 
 .features-list {}
@@ -135,10 +154,15 @@ button {
 
 .taste {
     background-color: #fff;
+    padding: 120px 0;
 }
+.taste-container {
 
-.taste-title title {
-
+}
+.taste-title {
+max-width: 412px;
+margin: 0 auto;
+margin-bottom: 28px;
 }
 
 .taste span{
@@ -152,6 +176,9 @@ button {
     letter-spacing: -0.02em;
     text-align: center;
     color: #111;
+    margin: 0 auto;
+    max-width: 486px;
+    margin-bottom: 50px;
 }
 
 .taste-list {}
