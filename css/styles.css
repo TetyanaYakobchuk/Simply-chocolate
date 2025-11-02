@@ -6,10 +6,26 @@ body {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
 button {
@@ -41,8 +57,35 @@ button {
 
 /*---------HEADER------------*/
 .header {
-    padding-top: 24px;
-    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 32px 28px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.header-contact-list {
+    display: flex;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.header-menu-list {
+    display: flex;
+    align-items: center;
+    margin-right: 160px;
+    gap: 24px;
 }
 
 .header-logo {
@@ -51,6 +94,10 @@ button {
     line-height: 1.11;
     letter-spacing: -0.03em;
     color: #111;
+    margin-right: 60px;
+    display: flex;
+    gap: 4px;
+    align-items: flex-start;
 }
 
 .header-logo-cursive {
@@ -79,15 +126,19 @@ button {
     text-align: center;
     color: #111;
 }
+
 /*----------HERO-----------*/
 .hero {
     color: #fff;
     padding-bottom: 80px;
 }
+
 .hero-container {
     padding: 380px 40px 40px 40px;
     background-color: #D9D9D9; /*тут буде фон*/
     border-radius: 30px;
+    width: 1136px;
+    height: 600px;
 }
 
 .hero-title {
@@ -95,30 +146,53 @@ button {
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.03em;
-    margin-bottom: 32px;
     max-width: 484px;
+    margin-bottom: 32px;
+    display: flex;
+}
+
+.common-buttons-container {
+    display: flex;
+    
+    align-items: center;
+}
+
+.hero-buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
 }
 
 .hero-buy-btn {
     color: #fff;
     background-color: #fd9222;
-    border: 1px solid #fd9222;
-    width: 144px;
-    height: 45px;
+    border: none;
+    border-radius: 100px;
+    padding: 14px 40px;
+    /*width: 150px;
+    height: 45px;*/
 }
 
 .hero-made-btn {
     color: #fff;
     border: 1px solid #fff;
-    width: 183px;
-    height: 45px;
+    background: transparent;
+    /*width: 185px;
+    height: 45px; */
     border-radius: 100px;
     padding: 14px 40px;
     font-weight: 600;
     
 }
-
-.hero-down-btn {
+.scroll-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 130px;
+    height: 38px;
+    margin-left: auto;
+}
+.hero-scroll {
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.03em;
@@ -130,17 +204,24 @@ button {
 .features {
     background-color: #1e1823;
     color: #fff;
-    padding: 50px 0;
 }
 
-.features-list {}
+.features-list {
+    display: flex;
+    align-items: center;
+    padding: 50px 50px;
+    gap: 70px;
+}
 
-.features-item {}
+.features-item {
+    width: calc((100% - 2 * 88px) / 3);
+}
 
 .features-subtitle {
     font-weight: 600;
     font-size: 18px;
     color: #fff;
+    margin-bottom: 18px;
 }
 
 .features-text {
@@ -158,11 +239,12 @@ button {
 }
 .taste-container {
 
+
 }
 .taste-title {
-max-width: 412px;
-margin: 0 auto;
-margin-bottom: 28px;
+    max-width: 412px;
+    margin: 0 auto;
+    margin-bottom: 28px;
 }
 
 .taste span{
@@ -181,14 +263,24 @@ margin-bottom: 28px;
     margin-bottom: 50px;
 }
 
-.taste-list {}
+.taste-list {
+    display: flex;
+    gap: 32px;
+    margin: 0 32px;
+}
 
-.taste-item {}
+.taste-item {
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    padding: 28px 23px;
+    width: calc((100% - 32px * 3) / 4);
+}
 
 .taste-image {
     border-radius: 15px;
-    width: 270px;
-    height: 270px;
+    margin-bottom: 36px;
+    /*width: 270px;
+    height: 270px;*/
 }
 
 .taste-subtitle {
@@ -198,6 +290,7 @@ margin-bottom: 28px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #111;
+    padding-left: 5px;
 }
 
 /*---------MADE------------*/
@@ -424,7 +517,7 @@ color: #fd9222;
 }
 
 .footer-address-list {
-    color: ;
+
 }
 
 .footer-address-item {
