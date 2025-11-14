@@ -781,6 +781,8 @@ padding-top: 60px;
     margin-bottom: 18px;
     resize: none;
     padding: 22px 24px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 .modal-textarea:hover,
@@ -802,6 +804,39 @@ padding-top: 60px;
 }
 
 
+.modal-check:checked + .check-text span{
+    background-color: #FD9222;
+}
+
+.check-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.6);
+}
+
+.check-text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+}
+
+.modal-check-icon {
+    fill: #fafafa;
+}
+
+.check-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #FD9222;
+}
+
 .modal-button-send {
     background-color: #FD9222;
     color: #fff;
@@ -810,4 +845,5 @@ padding-top: 60px;
     width: 117px;
     height: 45px;
     border-radius: 100px;
+    margin-top: 20px;
 }
