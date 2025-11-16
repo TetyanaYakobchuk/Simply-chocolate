@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    background-color: antiquewhite;
+    background-color: #ECEDED;
 }
 
 ul {
@@ -26,6 +26,7 @@ h5,
 h6,
 p {
     margin: 0;
+    padding: 0;
 }
 
 button {
@@ -366,15 +367,21 @@ button {
 .made {
     color: #111;
     padding-top: 60px;
-        padding-bottom: 60px;
+    padding-bottom: 60px;
 }
 
-.made-title title {
-
+.made-title {
+margin-bottom: 50px;
 }
 
 .title span {
     color: #fd9222;
+}
+
+.made-content {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
 }
 
 .made-image {
@@ -383,15 +390,39 @@ button {
     height: 400px;
 }
 
+.made-text {
+
+}
 .made-subtitle {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
+    margin-bottom: 28px;
 }
 
 .made-list {}
 
-.made-item {}
+.made-item {
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.made-item:last-child {
+    margin-bottom: 0;
+}
+
+.made-item::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4c4c4c;
+    border: 1px solid #ECEDED;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
 
 .made-text {
     font-size: 14px;
@@ -603,14 +634,24 @@ border-radius: 0 0 15px 15px;
 
 /*----------EXPLORE-----------*/
 
-.explore {
-    background-color: grey; /*тут буде фон*/
+.explore-section {
+
+    background-image: url(/images/chocolate-explore.jpg);
     color: #fff;
     padding-top: 60px;
-        padding-bottom: 60px;
+    padding-bottom: 60px;
 }
 
-.explore-image {}
+.explore-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin: 0 auto;
+    width: 467px;
+    height: 226px;
+}
+
 
 .explore-title {
     font-weight: 600;
@@ -620,10 +661,12 @@ border-radius: 0 0 15px 15px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    width: 378px;
+    height: 56px;
 }
 
 .explore-text {
-    line-height: 129%;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     text-align: center;
 }
@@ -640,13 +683,26 @@ border-radius: 0 0 15px 15px;
 /*----------FOOTER-----------*/
 
 .footer {
-padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 50px 32px;
     background-color: #1e1823;
     color: #fff;
 }
 
+.footer-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 63px;
+}
+
 .footer-text {
+    max-width: 300px;
     font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
@@ -661,11 +717,12 @@ padding-top: 60px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
-    text-align: center;
+    text-align: start;
+    margin-bottom: 14px;
 }
 
 .footer-address-list {
-
+    line-height: 1.29;
 }
 
 .footer-address-item {
@@ -676,27 +733,42 @@ padding-top: 60px;
     color: #fff;
 }
 
+.footer-social-contact{
+    
+}
+
 .footer-social-list {
+    display: inline-flex;
+    gap: 18px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
     color: #fff;
+    width: 66px;
+        height: 24px;
+        margin-bottom: 44px;
 }
 
 .footer-social-item {
+
 }
 
 .footer-social-link {
 }
 
 .footer-social-icon {
+    fill: transparent;
+    stroke: #fff;
+    width: 24px;
+    height: 24px;
 }
 
 .footer-nav {
+    margin-top: 24px;
 }
 
-.footer-nav-list {}
+.footer-nav-list {
+    display: flex;
+    gap: 24px;
+}
 
 .footer-nav-item {}
 
@@ -712,7 +784,15 @@ padding-top: 60px;
     background-color: rgba(30, 24, 35, 0.5);
     width: 100%;
     height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .modal {

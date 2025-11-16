@@ -135,25 +135,29 @@
       <div class="container">
         <section class="made">
           <h2 class="made-title title">hOW IT’S <span>made?</span></h2>
-          <img class="made-image" src="./images/made.jpg" alt="liquid chocolate" width="600" height="400">
-          <h3 class="made-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
-          <ul class="made-list">
-            <li class="made-item">
-              <p class="made-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">At the same time, prepare a water bath. Melt the butter on it.</p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">Heat the mixture over low heat, letting it barely boil.</p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
-            </li>
-          </ul>
+          <div class="made-content">
+            <img class="made-image" src="./images/made.jpg" alt="liquid chocolate" width="600" height="400">
+            <div class="made-text">
+              <h3 class="made-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
+              <ul class="made-list">
+                <li class="made-item">
+                  <p class="made-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">At the same time, prepare a water bath. Melt the butter on it.</p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">Heat the mixture over low heat, letting it barely boil.</p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
       <!---------PRODUCTS-------------->
@@ -253,11 +257,12 @@
       </div>
       <!----------EXPLORE------------->
       <div class="container">
-        <section class="explore">
-          <img class="explore-image" src="#" alt="background image liquid chocolate">
-          <h2 class="explore-title title">exPLORE OUR NEW CHOCOLATE FIRST</h2>
-          <p class="explore-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
-          <button class="explore-btn button" type="submit">Subscribe</button>
+        <section class="explore-section">
+          <div class="explore-wrap">
+            <h2 class="explore-title title">exPLORE OUR NEW CHOCOLATE FIRST</h2>
+            <p class="explore-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
+            <button class="explore-btn button" type="submit">Subscribe</button>
+          </div>
         </section>
       </div>
     </main>
@@ -265,40 +270,50 @@
       <!----------FOOTER------------->
     <div class="container">
       <footer class="footer">
-        <p class="footer-text"><span>Chocolate</span> a delicious cure for a bad day</p>
-        <p class="footer-subtitle">Contact us</p>
-        <address>
-          <ul class="footer-address-list">
-            <li class="footer-address-item"><a class="footer-address-link" href="tel:+380684439426" target="_blank" rel="noopener noreferrer nofollow">+380 (68) 443-94-26</a></li>
-            <li class="footer-address-item"><a class="footer-address-link" href="mailto:simplychoc@gmail.com" target="_blank" rel="noopener noreferrer nofollow">simplychoc@gmail.com</a></li>
-          </ul>
-        </address>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img class="footer-social-icon" src="/images/instagram_icon.svg" alt="instagram icon" />
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img class="footer-social-icon" src="/images/twitter_icon.svg" alt="twitter icon" />
-            </a>
-          </li>
-        </ul>
+        <div class="footer-top">
+          <p class="footer-text"><span>Chocolate</span> a delicious cure for a bad day</p>
+          <div class="footer-social">
+            <div class="footer-social-contact">
+              <p class="footer-subtitle">Contact us</p>
+              <address>
+                <ul class="footer-address-list">
+                  <li class="footer-address-item"><a class="footer-address-link" href="tel:+380684439426" target="_blank" rel="noopener noreferrer nofollow">+380 (68) 443-94-26</a></li>
+                  <li class="footer-address-item"><a class="footer-address-link" href="mailto:simplychoc@gmail.com" target="_blank" rel="noopener noreferrer nofollow">simplychoc@gmail.com</a></li>
+                </ul>
+              </address>
+            </div>
+            <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="footer-social-icon" width="24" heigth="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="footer-social-icon" width="24" heigth="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            </ul>
+          </div> 
+        </div>
         <nav class="footer-nav">
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item"><a class="footer-nav-link" href="">Home</a></li>
-            <li class="footer-nav-item"><a class="footer-nav-link" href="">How it’s made?</a></li>
-            <li class="footer-nav-item"><a class="footer-nav-link" href="">Our products</a></li>
-            <li class="footer-nav-item"><a class="footer-nav-link" href="">Top sellers</a></li>
-            <li class="footer-nav-item"><a class="footer-nav-link" href="">Chocolate is loved</a></li>
-          </ul>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item"><a class="footer-nav-link" href="">Home</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-link" href="">How it’s made?</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-link" href="">Our products</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-link" href="">Top sellers</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-link" href="">Chocolate is loved</a></li>
+            </ul>
         </nav>
       </footer>
     </div>
 
     <!----------MODAL------------->
-    <div class="backdrop">
+    <div class="backdrop"> //убрать/добавить класс is-open для модального окна
       <div class="modal">
         <button type="button" class="modal-close">
           <svg width="24" height="24">
