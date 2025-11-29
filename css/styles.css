@@ -14,8 +14,14 @@ a {
     text-decoration: none;
 }
 
+address {
+    font-style: normal;
+}
+
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 h1,
@@ -91,15 +97,13 @@ button {
 }
 
 .header-contact-list {
-    display: flex;
+    display: none;
     gap: 14px;
     /*flex-shrink: 0;*/
 }
 
 .header-menu-list {
-    display: flex;
-    align-items: center;
-    margin-right: 160px;
+    display: none;
     gap: 24px;
 }
 
@@ -136,16 +140,6 @@ button {
 .header-menu-link:hover {
     color: #fd9222;
 }
-
-.title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #111;
-}
 .header-contact-link {
     width: 40px;
     height: 40px;
@@ -166,37 +160,121 @@ button {
     fill: transparent;
     stroke: #fff;
 }
+.menu-open-btn {
+    border-color: transparent;
+    margin-left: 60px;
+    padding: 0;
+    display: block;
+    stroke: #111;
+}
+/*------mobile menu-------*/
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: #1e1823;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.menu-close-btn {
+    display: block;
+    margin-left: auto;
+    stroke: #fff;
+    background-color: #1e1823; /*изменить*/
+    border-color: transparent;
+    padding: 20px;
+    margin-bottom: 88px;
+
+}
+
+.mobile-menu-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu-list {
+    text-align: left;
+    align-self: center;
+}
+
+.mobile-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mobile-menu-link{
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+.mobile-menu-link:hover {
+    color: #FD9222;
+}
+
+.mobile-contact-list {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.mobile-contact-item {}
+
+.mobile-contact-item:hover {
+    stroke: #FD9222;
+}
+/*!не работает*/
+
+.mobile-contact-link {}
+
+.mobile-contact-icon {
+    fill: transparent;
+    stroke: #fff;
+}
+
 
 /*----------HERO-----------*/
 .hero {
-    color: #fff;
-    padding-bottom: 80px;
+    color: #111; /*изменить*/
 }
 
 .hero-container {
-    padding: 380px 40px 40px 40px;
+    padding: 395px 20px 20px 20px;
     background-color: #D9D9D9; /*тут буде фон*/
     background-image: 
     linear-gradient(rgba(17, 17, 17, 0.4),rgba(17, 17, 17, 0.4)),
-    url(../images/hero-background.jpg);
+    url(../images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 30px;
-    width: 1136px;
-    height: 600px;
+    width: 365px;
 }
-
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)  {
+    .hero-container {
+        background-image:
+            linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+            url(../images/hero-mobile@2x.jpg);
+    }
+}
 .hero-title {
     font-weight: 500;
-    font-size: 28px;
-    line-height: 1.21;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     max-width: 484px;
     margin-bottom: 32px;
-    display: flex;
+    color: #fff;
 }
 
 .common-buttons-container {
-    display: flex;
-    
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -204,6 +282,7 @@ button {
     display: flex;
     justify-content: flex-start;
     gap: 14px;
+    margin-bottom: 32px;
 }
 
 .hero-buy-btn {
@@ -211,29 +290,28 @@ button {
     background-color: #fd9222;
     border: none;
     border-radius: 100px;
-    padding: 14px 40px;
-    /*width: 150px;
-    height: 45px;*/
+    padding: 12px 16px;
+    width: 120px;
+    height: 41px;
 }
 
 .hero-made-btn {
     color: #fff;
     border: 1px solid #fff;
     background: transparent;
-    /*width: 185px;
-    height: 45px; */
+    width: 159px;
+    height: 41px; 
     border-radius: 100px;
-    padding: 14px 40px;
+    padding: 12px 16px;
     font-weight: 600;
-    
 }
 .scroll-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 14px;
     width: 130px;
     height: 38px;
-    margin-left: auto;
+    margin-left: 20px;
 }
 
 .scroll-container:hover {
@@ -245,7 +323,6 @@ button {
     letter-spacing: -0.03em;
     color: #fff;
     font-size: 14px;
-    margin-left: auto;
 }
 
 .hero-scroll:hover {
@@ -389,11 +466,11 @@ button {
 .made {
     color: #111;
     padding-top: 60px;
-    padding-bottom: 60px;
+
 }
 
 .made-title {
-margin-bottom: 50px;
+    margin-bottom: 12px;
 }
 
 .title span {
@@ -402,14 +479,14 @@ margin-bottom: 50px;
 
 .made-content {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    background-color: #fff;
+    background-color: #ECEDED;
+    padding: 20px 14px;
 }
 
-.made-image {
+.made-content picture {
     border-radius: 15px;
-    width: 600px;
-    height: 400px;
 }
 
 .made-text {
@@ -461,18 +538,33 @@ margin-bottom: 50px;
 }
 
 .products-title {
-
+    margin-bottom: 50px;
 }
 
 .products-title span {
 color: #fd9222;
 }
 
-.products-list {}
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
 
-.products-item {}
+.products-item {
+    width: 100%;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
-.products-image {}
+.products-image {
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
 
 .products-subtitle {
     font-weight: 600;
@@ -480,23 +572,28 @@ color: #fd9222;
     line-height: 1.33;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    color: #111;
+    margin-bottom: 2px;
+
 }
 
 .products-text {
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: -0.02em;
     color: rgba(17, 17, 17, 0.7);
+    margin-bottom: 18px;
+
 }
 
 .products-bnt {
     font-weight: 600;
+    font-size: 14px;
+    color: #111;
     border: 1px solid;
     padding: 20px;
-    width: 94px;
+    width: 104px;
     height: 33px;
-    text-align: center;
 }
 
 /*---------SELLERS------------*/
@@ -995,6 +1092,45 @@ border-radius: 0 0 15px 15px;
         font-size: 24px;
     }
 
+    /*HEADER media*/
+
+
+    /*HERO media*/
+    .hero-container {
+        background-image:
+            linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+            url(../images/hero-tablet.jpg);
+    }
+
+    .common-buttons-container {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 43px;
+    }
+
+    .hero-title {
+        width: 484px;
+        height: 102px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .hero-made-btn {
+        padding: 14px 40px;
+        width: 188px;
+        height: 45px;
+    }
+    
+    .hero-buy-btn {
+        padding: 14px 40px;
+        width: 144px;
+        height: 45px;
+    }
+
+    .scroll-container {
+        margin-left: auto;
+        margin-top: 0;
+    }
+
     /*FEATURES media*/
     .features {
         padding-top: 50px;
@@ -1023,8 +1159,34 @@ border-radius: 0 0 15px 15px;
     .taste-text {
     margin-bottom: 50px;
     }
-}
+
     /* MADE media */
+
+    .made-content {
+        padding: 32px;
+    }
+
+    .made-title {
+
+    }
+
+    .made-content picture {
+        margin-bottom: 20px;
+
+    }
+
+    /* PRODUCTS media */
+    .products-list {
+        gap: 32px;
+    }
+    
+    .products-item {
+        width: calc((100% - 32px) / 2);
+    }
+}
+
+
+
 
 
 
@@ -1037,6 +1199,40 @@ border-radius: 0 0 15px 15px;
     .made .container {
         width: 1166px;
     }
+
+        /*HEADER media*/
+
+    .header-menu-list {
+        display: flex;
+        align-items: center;
+        margin-right: 160px;
+        gap: 24px;
+    }
+        
+    .header-contact-list {
+        display: flex;
+        gap: 14px;
+        /*flex-shrink: 0;*/
+    }
+
+    .menu-open-btn {
+        display: none;
+    }
+
+        /*HERO media*/
+
+    .hero-container {
+        padding: 380px 40px 0px 40px;
+        background-image:
+            linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+            url(../images/hero-desktop.jpg);
+    }
+
+    .hero-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
         /*FEATURES media*/
     .features-list {
         gap: 88px;
@@ -1067,4 +1263,22 @@ border-radius: 0 0 15px 15px;
 
     /* MADE media */
 
+    .made-content {
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .made-content picture {
+        margin-bottom: 0;
+    }
+
+    /* PRODUCTS media */
+
+    .products-list {
+        gap: 24px 18px;
+    }
+        
+    .products-item {
+        width: calc((100% - 54px) / 4);
+    }
 }
