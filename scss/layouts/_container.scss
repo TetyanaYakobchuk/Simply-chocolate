@@ -1,0 +1,29 @@
+.container {
+    /*width: 1136px;*/
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*-------TABLET VERSION------*/
+@media screen and (min-width: 768px) {
+    .container {
+        width: 734px;
+    }
+    .made .container {
+        width: 644px;
+    }
+    .title {
+        font-size: 24px;
+    }
+}
+
+        /*-------LAPTOP VERSION------*/
+        @media screen and (min-width: 1199px) {
+            .container {
+                width: 1166px;
+            }
+    
+            .made .container {
+                width: 1166px;
+            }

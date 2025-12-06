@@ -1,3 +1,76 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    src: url('../fonts/montserrat-v31-latin-100.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    src: url('../fonts/montserrat-v31-latin-200.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    src: url('../fonts/montserrat-v31-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: url('../fonts/montserrat-v31-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url('../fonts/montserrat-v31-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url('../fonts/montserrat-v31-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    src: url('../fonts/montserrat-v31-latin-800.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    src: url('../fonts/montserrat-v31-latin-900.woff2') format('woff2');
+}
+
+:root {
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -72,6 +145,7 @@ button {
     text-align: center;
     color: #111;
 }
+
 .title span {
     color: #fd9222;
 }
@@ -119,7 +193,7 @@ button {
     align-items: flex-start;
 }
 
-.header-logo-image{
+.header-logo-image {
     stroke: #fd9222;
     fill: #FCF1E0
 }
@@ -129,17 +203,18 @@ button {
 }
 
 .header-menu-link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: -0.02em;
-        color: #111;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #111;
 }
 
 .header-menu-link:focus,
 .header-menu-link:hover {
     color: #fd9222;
 }
+
 .header-contact-link {
     width: 40px;
     height: 40px;
@@ -160,6 +235,7 @@ button {
     fill: transparent;
     stroke: #fff;
 }
+
 .menu-open-btn {
     border-color: transparent;
     margin-left: 60px;
@@ -167,6 +243,7 @@ button {
     display: block;
     stroke: #111;
 }
+
 /*------mobile menu-------*/
 .mobile-menu {
     display: flex;
@@ -186,7 +263,8 @@ button {
     display: block;
     margin-left: auto;
     stroke: #fff;
-    background-color: #1e1823; /*изменить*/
+    background-color: #1e1823;
+    /*изменить*/
     border-color: transparent;
     padding: 20px;
     margin-bottom: 88px;
@@ -207,13 +285,14 @@ button {
     margin-bottom: 24px;
 }
 
-.mobile-menu-link{
+.mobile-menu-link {
     color: #fff;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
 }
+
 .mobile-menu-link:hover {
     color: #FD9222;
 }
@@ -230,6 +309,7 @@ button {
 .mobile-contact-item:hover {
     stroke: #FD9222;
 }
+
 /*!не работает*/
 
 .mobile-contact-link {}
@@ -242,27 +322,33 @@ button {
 
 /*----------HERO-----------*/
 .hero {
-    color: #111; /*изменить*/
+    color: #111;
+    /*изменить*/
 }
 
 .hero-container {
     padding: 395px 20px 20px 20px;
-    background-color: #D9D9D9; /*тут буде фон*/
-    background-image: 
-    linear-gradient(rgba(17, 17, 17, 0.4),rgba(17, 17, 17, 0.4)),
-    url(../images/hero-mobile.jpg);
+    background-color: #D9D9D9;
+    /*тут буде фон*/
+    background-image:
+        linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+        url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
     width: 365px;
 }
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)  {
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
     .hero-container {
         background-image:
             linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
             url(../images/hero-mobile@2x.jpg);
     }
 }
+
 .hero-title {
     font-weight: 500;
     font-size: 20px;
@@ -300,11 +386,12 @@ button {
     border: 1px solid #fff;
     background: transparent;
     width: 159px;
-    height: 41px; 
+    height: 41px;
     border-radius: 100px;
     padding: 12px 16px;
     font-weight: 600;
 }
+
 .scroll-container {
     display: flex;
     align-items: flex-start;
@@ -317,6 +404,7 @@ button {
 .scroll-container:hover {
     color: #fd9222;
 }
+
 .hero-scroll {
     font-weight: 500;
     line-height: 1.29;
@@ -338,12 +426,16 @@ button {
     width: 38px;
     height: 38px;
     fill: #FD9222
-} /*! не работает*/
+}
+
+/*! не работает*/
 
 .hero-icon:hover {
     background-color: #fd9222;
     fill: #fff;
-} /*! не работает ховер*/
+}
+
+/*! не работает ховер*/
 
 /*----------FEATURES-----------*/
 .features {
@@ -399,17 +491,16 @@ button {
     padding-top: 80px;
     padding-bottom: 40px;
 }
-.taste-container {
 
+.taste-container {}
 
-}
 .taste-title {
     max-width: 412px;
     margin: 0 auto;
     margin-bottom: 28px;
 }
 
-.taste span{
+.taste span {
     color: #fd9222;
 }
 
@@ -489,9 +580,8 @@ button {
     border-radius: 15px;
 }
 
-.made-text {
+.made-text {}
 
-}
 .made-subtitle {
     font-weight: 600;
     font-size: 18px;
@@ -534,7 +624,7 @@ button {
 
 .products {
     padding-top: 60px;
-        padding-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .products-title {
@@ -542,7 +632,7 @@ button {
 }
 
 .products-title span {
-color: #fd9222;
+    color: #fd9222;
 }
 
 .products-list {
@@ -624,7 +714,8 @@ color: #fd9222;
     position: relative;
     overflow: hidden;
 }
-.sellers-item:hover .sellers-cover{
+
+.sellers-item:hover .sellers-cover {
     transform: translateY(0);
     cursor: pointer;
 }
@@ -632,14 +723,14 @@ color: #fd9222;
 .sellers-content {
     border: 2px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
-    overflow: hidden; 
+    overflow: hidden;
     text-align: center;
 }
 
 .sellers-image {
-width: 100%;
-display: block;
-border-radius: 0 0 15px 15px;
+    width: 100%;
+    display: block;
+    border-radius: 0 0 15px 15px;
 }
 
 .sellers-subtitle {
@@ -683,11 +774,9 @@ border-radius: 0 0 15px 15px;
     font-weight: 400;
     font-size: 18px;
     backdrop-filter: blur(15px);
-    background: linear-gradient(
-        161deg,
-        rgba(253, 253, 255, 0.1) 0%,
-        rgba(8, 2, 21, 0.1) 100%
-    );
+    background: linear-gradient(161deg,
+            rgba(253, 253, 255, 0.1) 0%,
+            rgba(8, 2, 21, 0.1) 100%);
     height: 100%;
     display: flex;
     align-items: center;
@@ -721,7 +810,7 @@ border-radius: 0 0 15px 15px;
 
 .loved-title {}
 
-.loved-title span{
+.loved-title span {
     color: #fd9222;
     width: 200px;
     height: 122px;
@@ -845,7 +934,7 @@ border-radius: 0 0 15px 15px;
     margin-right: auto;
 }
 
-.footer-text span{
+.footer-text span {
     color: #fd9222;
 }
 
@@ -869,9 +958,7 @@ border-radius: 0 0 15px 15px;
     color: #fff;
 }
 
-.footer-social-contact{
-    
-}
+.footer-social-contact {}
 
 .footer-social-list {
     display: inline-flex;
@@ -879,16 +966,13 @@ border-radius: 0 0 15px 15px;
     font-weight: 500;
     color: #fff;
     width: 66px;
-        height: 24px;
-        margin-bottom: 44px;
+    height: 24px;
+    margin-bottom: 44px;
 }
 
-.footer-social-item {
+.footer-social-item {}
 
-}
-
-.footer-social-link {
-}
+.footer-social-link {}
 
 .footer-social-icon {
     fill: transparent;
@@ -978,6 +1062,7 @@ border-radius: 0 0 15px 15px;
     padding: 22px 24px;
     background-color: transparent;
 }
+
 .modal-input:hover,
 .modal-input:focus {
     border-color: #FD9222;
@@ -1030,7 +1115,7 @@ border-radius: 0 0 15px 15px;
 }
 
 
-.modal-check:checked + .check-text span{
+.modal-check:checked+.check-text span {
     background-color: #FD9222;
     border: none;
     fill: #fafafa;
@@ -1085,9 +1170,11 @@ border-radius: 0 0 15px 15px;
     .container {
         width: 734px;
     }
+
     .made .container {
         width: 644px;
     }
+
     .title {
         font-size: 24px;
     }
@@ -1114,12 +1201,13 @@ border-radius: 0 0 15px 15px;
         font-size: 28px;
         font-weight: 600;
     }
+
     .hero-made-btn {
         padding: 14px 40px;
         width: 188px;
         height: 45px;
     }
-    
+
     .hero-buy-btn {
         padding: 14px 40px;
         width: 144px;
@@ -1137,10 +1225,12 @@ border-radius: 0 0 15px 15px;
         padding-bottom: 50px;
         padding-left: 32px;
     }
+
     .features-item {
         width: calc((100% - 2 * 88px) / 2);
         padding-right: 0;
     }
+
     .features-list {
         gap: 44px 88px;
     }
@@ -1150,14 +1240,17 @@ border-radius: 0 0 15px 15px;
         padding-top: 100px;
         padding-bottom: 50px;
     }
+
     .taste-list {
-    gap: 32px;
+        gap: 32px;
     }
+
     .taste-item {
         width: calc((100% - 32px) / 2);
-        }
+    }
+
     .taste-text {
-    margin-bottom: 50px;
+        margin-bottom: 50px;
     }
 
     /* MADE media */
@@ -1166,9 +1259,7 @@ border-radius: 0 0 15px 15px;
         padding: 32px;
     }
 
-    .made-title {
-
-    }
+    .made-title {}
 
     .made-content picture {
         margin-bottom: 20px;
@@ -1179,7 +1270,7 @@ border-radius: 0 0 15px 15px;
     .products-list {
         gap: 32px;
     }
-    
+
     .products-item {
         width: calc((100% - 32px) / 2);
     }
@@ -1190,7 +1281,7 @@ border-radius: 0 0 15px 15px;
 
 
 
-    /*-------LAPTOP VERSION------*/
+/*-------LAPTOP VERSION------*/
 @media screen and (min-width: 1199px) {
     .container {
         width: 1166px;
@@ -1200,7 +1291,7 @@ border-radius: 0 0 15px 15px;
         width: 1166px;
     }
 
-        /*HEADER media*/
+    /*HEADER media*/
 
     .header-menu-list {
         display: flex;
@@ -1208,7 +1299,7 @@ border-radius: 0 0 15px 15px;
         margin-right: 160px;
         gap: 24px;
     }
-        
+
     .header-contact-list {
         display: flex;
         gap: 14px;
@@ -1219,7 +1310,7 @@ border-radius: 0 0 15px 15px;
         display: none;
     }
 
-        /*HERO media*/
+    /*HERO media*/
 
     .hero-container {
         padding: 380px 40px 0px 40px;
@@ -1233,12 +1324,13 @@ border-radius: 0 0 15px 15px;
         margin-bottom: 40px;
     }
 
-        /*FEATURES media*/
+    /*FEATURES media*/
     .features-list {
         gap: 88px;
         padding-left: 18px;
         padding-right: 18px;
     }
+
     .features-item {
         width: calc((100% - 2 * 88px) / 3);
     }
@@ -1248,15 +1340,15 @@ border-radius: 0 0 15px 15px;
         padding-top: 120px;
         padding-bottom: 60px;
     }
-        
+
     .taste-list {
         gap: 24px 32px;
     }
-        
+
     .taste-item {
         width: calc((100% - 32px * 3) / 4);
     }
-        
+
     .taste-text {
         margin-bottom: 50px;
     }
@@ -1277,7 +1369,7 @@ border-radius: 0 0 15px 15px;
     .products-list {
         gap: 24px 18px;
     }
-        
+
     .products-item {
         width: calc((100% - 54px) / 4);
     }

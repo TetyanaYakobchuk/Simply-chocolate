@@ -1,0 +1,172 @@
+.hero {
+    color: #111;
+    /*изменить*/
+}
+
+.hero-container {
+    padding: 395px 20px 20px 20px;
+    background-color: #D9D9D9;
+    /*тут буде фон*/
+    background-image:
+        linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+        url(../images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    width: 365px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-container {
+        background-image:
+            linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+            url(../images/hero-mobile@2x.jpg);
+    }
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    max-width: 484px;
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+.common-buttons-container {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.hero-buy-btn {
+    color: #fff;
+    background-color: #fd9222;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 16px;
+    width: 120px;
+    height: 41px;
+}
+
+.hero-made-btn {
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+    width: 159px;
+    height: 41px;
+    border-radius: 100px;
+    padding: 12px 16px;
+    font-weight: 600;
+}
+
+.scroll-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    width: 130px;
+    height: 38px;
+    margin-left: 20px;
+}
+
+.scroll-container:hover {
+    color: #fd9222;
+}
+
+.hero-scroll {
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    color: #fff;
+    font-size: 14px;
+}
+
+.hero-scroll:hover {
+    color: #fd9222;
+}
+
+.hero-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 38px;
+    height: 38px;
+    fill: #FD9222
+}
+
+/*! не работает*/
+
+.hero-icon:hover {
+    background-color: #fd9222;
+    fill: #fff;
+}
+
+/*! не работает ховер*/
+
+
+/*-------TABLET VERSION------*/
+
+
+/*HERO media*/
+.hero-container {
+    background-image:
+        linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+        url(../images/hero-tablet.jpg);
+}
+
+.common-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 43px;
+}
+
+.hero-title {
+    width: 484px;
+    height: 102px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hero-made-btn {
+    padding: 14px 40px;
+    width: 188px;
+    height: 45px;
+}
+
+.hero-buy-btn {
+    padding: 14px 40px;
+    width: 144px;
+    height: 45px;
+}
+
+.scroll-container {
+    margin-left: auto;
+    margin-top: 0;
+}
+
+        /*-------LAPTOP VERSION------*/
+    
+        /*HERO media*/
+    
+        .hero-container {
+            padding: 380px 40px 0px 40px;
+            background-image:
+                linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+                url(../images/hero-desktop.jpg);
+        }
+    
+        .hero-title {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }

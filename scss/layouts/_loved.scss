@@ -1,0 +1,49 @@
+.loved {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.loved-title {}
+
+.loved-title span {
+    color: #fd9222;
+    width: 200px;
+    height: 122px;
+}
+
+.title {}
+
+.loved-list {}
+
+.loved-item {}
+
+.loved-image {
+    border-radius: 100%;
+}
+
+.loved-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: #111;
+}
+
+.loved-text {
+    line-height: 1.29;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.loved-bnt {
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 222px;
+    height: 50px;
+}

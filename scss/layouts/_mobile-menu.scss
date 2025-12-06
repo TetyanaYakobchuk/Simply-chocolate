@@ -1,0 +1,73 @@
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: #1e1823;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.menu-close-btn {
+    display: block;
+    margin-left: auto;
+    stroke: #fff;
+    background-color: #1e1823;
+    /*изменить*/
+    border-color: transparent;
+    padding: 20px;
+    margin-bottom: 88px;
+
+}
+
+.mobile-menu-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu-list {
+    text-align: left;
+    align-self: center;
+}
+
+.mobile-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mobile-menu-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.mobile-menu-link:hover {
+    color: #FD9222;
+}
+
+.mobile-contact-list {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.mobile-contact-item {}
+
+.mobile-contact-item:hover {
+    stroke: #FD9222;
+}
+
+/*!не работает*/
+
+.mobile-contact-link {}
+
+.mobile-contact-icon {
+    fill: transparent;
+    stroke: #fff;
+}

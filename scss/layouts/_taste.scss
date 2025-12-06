@@ -1,0 +1,121 @@
+.taste {
+    background-color: #fff;
+    /*padding-top: 120px;
+    padding-bottom: 60px;*/
+    padding: 80px 20px 40px 20px;
+}
+
+.taste-container {
+    width: 404px;
+
+}
+
+.taste-title {
+    max-width: 412px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+
+.taste span {
+    color: #fd9222;
+}
+
+.taste-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #111;
+    margin: 0 auto;
+    max-width: 486px;
+    /*margin-bottom: 50px;*/
+    margin-bottom: 32px;
+}
+
+.taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /*gap: 24px 32px;*/
+}
+
+.taste-item {
+    border: 1px solid #fd9222;
+    background-color: #FD9222;
+    border-radius: 15px;
+    padding: 28px 23px;
+    width: 100%;
+}
+
+.taste-image {
+    display: block;
+    margin: 0 auto;
+    /*border-radius: 15px;*/
+    margin-bottom: 36px;
+    /*width: 270px;
+    height: 270px;*/
+    /*width="206" height="160"*/
+}
+
+.taste-subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111;
+    padding-left: 5px;
+}
+
+/*-------TABLET VERSION------*/
+
+/*TASTE media*/
+.taste-container {
+    padding: 0;
+}
+
+.taste {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.taste-list {
+    gap: 32px;
+}
+
+.taste-item {
+    width: calc((100% - 32px) / 2);
+}
+
+.taste-text {
+    margin-bottom: 50px;
+}
+
+/*-------LAPTOP VERSION------*/
+
+
+/*TASTE media*/
+
+.taste-container {
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+.taste {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.taste-list {
+    gap: 24px 32px;
+}
+
+.taste-item {
+    width: calc((100% - 32px * 3) / 4);
+}
+
+.taste-text {
+    margin-bottom: 50px;
+}
